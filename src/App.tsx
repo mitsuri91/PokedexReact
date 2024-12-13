@@ -33,13 +33,16 @@ function App() {
       name: "mew",
     },
   ];
+
+
+
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
   return (
     <div>
       <nav>
         {pokemonList.map((pokemon, index) => (
-          <button key={pokemon.id} onClick={() => setPokemonIndex(index)}>
+          <button type="button" key={pokemon.id} onClick={() => setPokemonIndex(index)}>
             {pokemon.name}
           </button>
         ))}
